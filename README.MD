@@ -1,7 +1,8 @@
 # Circle inversion
 A simple script for circle inverting an image.
 
-Works best for high-resolution images. Black 'flower' in the centre of resulting image is happening because images are not infinite and therefore there's nothing to go there. Black parts between pixels exist for the opposite reason -- usually there are less pixels in the circle to go out. Also there is a rounding problem -- inverted pixels' coordinates are float but coordinates on screen are integers so we need to round them.
+Works best with high-resolution images. 
+Black 'flower' in the centre of resulting image happens because images are not infinite and therefore there's no pixels to go there. Black parts between pixels in the outer circle exist for the opposite reason -- usually there are less pixels within the circle to go out. Also there is a rounding problem -- inverted pixels' coordinates are float but coordinates on screen are integers so we need to round them.
 
 ## Usage:
 `python inversion.py <file> <radius> [-c <centre-delta-x> <centre-delta-y>] [-o <out-name>] [-q]`
